@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Worker">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <UserSecretsId>dotnet-EventLogExporterElasticSearch-E480DCDC-5542-443A-A879-763D915661EB</UserSecretsId>
     <Authors>Akpaev Evgeny</Authors>
     <Copyright>Akpaev Evgeny</Copyright>
@@ -10,6 +10,8 @@
     <Version>1.0.5</Version>
     <AssemblyName>EventLogExporter</AssemblyName>
     <RootNamespace>OneSTools.EventLog.Exporter</RootNamespace>
+    <Platforms>AnyCPU</Platforms>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">

@@ -1,13 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk.Worker">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <UserSecretsId>dotnet-OneSTools.EventLog.Exporter.Manager-436AD68C-DBEB-42E3-8010-E66614FE89B6</UserSecretsId>
     <AssemblyName>EventLogExportersManager</AssemblyName>
     <Version>0.0.5</Version>
     <Authors>Akpaev Evgeny</Authors>
     <Copyright>Akpaev Evgeny</Copyright>
     <Description>Менеджер служб экспорта журналов регистрации</Description>
+    <Platforms>AnyCPU</Platforms>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

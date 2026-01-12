@@ -179,14 +179,15 @@ namespace OneSTools.EventLog
         private static string GetComplexData(BracketsNode node)
         {
             var str = new StringBuilder();
+            if (node.Count == 0) 
+                return str.ToString();
+
             var subDataNode = node.Count == 1 ? node[0] : node[1];
             var subDataCount = subDataNode.Count - 1;
-
             if (subDataCount > 1)
                 for (var i = 1; i <= subDataCount; i++)
                 {
                     var value = GetData(subDataNode[i]);
-
                     if (value != string.Empty)
                         str.AppendLine($"{value}");
                 }
@@ -194,7 +195,7 @@ namespace OneSTools.EventLog
             {
                 var value = GetData(subDataNode);
                 if (value != string.Empty)
-                    str.AppendLine($"{value}");
+                   str.AppendLine($"{value}");
             }
 
             return str.ToString();
